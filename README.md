@@ -1,7 +1,3 @@
-# iron-source-assignment
-
-Iron source :: Interactive video assignment
-
 # Interactive video assignment
 
 Welcome to matan shemesh Interactive video assignment
