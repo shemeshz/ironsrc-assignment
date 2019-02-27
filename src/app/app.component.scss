@@ -1,0 +1,59 @@
+.btn {
+  position: absolute;
+  bottom: 20px;
+  z-index: 9999;
+  width: 190px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -moz-border-radius: 18px;
+  -webkit-border-radius: 18px;
+  border-radius: 18px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 26px;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-align: center;
+
+  &.tap {
+    -moz-box-shadow: 0 4px 0 0 #8a2a21;
+    -webkit-box-shadow: 0 4px 0 0 #8a2a21;
+    box-shadow: 0 4px 0 0 #8a2a21;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
+    background: -moz-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: -webkit-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: -o-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: -ms-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437', GradientType=0);
+    background-color: #c62d1f;
+    border: 1px solid #d02718;
+  }
+
+  &.download {
+    -moz-box-shadow: 0 4px 0 0 #568a34;
+    -webkit-box-shadow: 0 4px 0 0 #568a34;
+    box-shadow: 0 4px 0 0 #568a34;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #618a00), color-stop(1, #008a1d));
+    background: -moz-linear-gradient(top, #618a00 5%, #008a1d 100%);
+    background: -webkit-linear-gradient(top, #618a00 5%, #008a1d 100%);
+    background: -o-linear-gradient(top, #618a00 5%, #008a1d 100%);
+    background: -ms-linear-gradient(top, #618a00 5%, #008a1d 100%);
+    background: linear-gradient(to bottom, #618a00 5%, #008a1d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#618a00', endColorstr='#f24437', GradientType=0);
+    background-color: #618a00;
+    border: 1px solid #008a1d;
+  }
+
+
+}
+
+
+@media screen and (orientation:landscape) {
+  video{
+    height: 375px;
+  }
+}

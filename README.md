@@ -1,2 +1,3 @@
-# ironsrc-assignment
-Interactive video assignment
+# iron-source-assignment
+
+Iron source :: Interactive video assignment

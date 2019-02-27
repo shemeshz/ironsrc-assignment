@@ -1,0 +1,37 @@
+<button *ngIf="showTapToHit" [@slideInOut] class="btn tap" role="button" (click)="resumeVid()">Tap To Hit</button>
+
+<a *ngIf="showDownload" [@slideInOut] href="{{ downLoadUrl }}" class="btn download">Download Now</a>
+
+<!--href="{{ downLoadUrl }}"-->
+
+
+<vg-player (onPlayerReady)="onPlayerReady($event)">
+  <!--<vg-overlay-play></vg-overlay-play>-->
+  <!--<vg-buffering></vg-buffering>-->
+
+  <!--<vg-controls>-->
+  <!--<vg-play-pause></vg-play-pause>-->
+  <!--<vg-playback-button></vg-playback-button>-->
+
+  <!--<vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>-->
+
+  <!--<vg-scrub-bar>-->
+  <!--<vg-scrub-bar-current-time></vg-scrub-bar-current-time>-->
+  <!--<vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>-->
+  <!--</vg-scrub-bar>-->
+
+  <!--<vg-time-display vgProperty="left" vgFormat="mm:ss"></vg-time-display>-->
+  <!--<vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>-->
+
+  <!--<vg-track-selector></vg-track-selector>-->
+  <!--<vg-mute></vg-mute>-->
+  <!--<vg-volume></vg-volume>-->
+
+  <!--<vg-fullscreen></vg-fullscreen>-->
+  <!--</vg-controls>-->
+
+  <video [vgMedia]="media" #media id="singleVideo" preload="auto" crossorigin>
+    <source src="http://ssastatic.s3.amazonaws.com/creatives/irv-mini_golf_king_v2_v1_91476/assets/mini_golf_king.mp4"
+            type="video/mp4">
+  </video>
+</vg-player>
